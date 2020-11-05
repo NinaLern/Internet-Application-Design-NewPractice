@@ -1,0 +1,9 @@
+<p>home works!</p>
+
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item mr-5 display-5 dropdown" *ngFor="let menuitem of menu">
+      <a [routerLink]="menuitem.route" class="text-white nav-link">
+        {{ menuitem.name }}
+      </a>
+    </li>
+</ul>
